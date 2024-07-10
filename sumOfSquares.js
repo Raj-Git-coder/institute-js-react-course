@@ -17,11 +17,11 @@ let sumOfSquares = (arr, a, b) =>
             sum += a*a + b*b;
             // console.log(a , b, sum);
 
-            sumOfSquares(a, b);
+            sumOfSquares([],a, b);
         }
     }
-    console.log(sum);
+    return sum;    
 
 }
-sumOfSquares(arr);
+console.log(sumOfSquares(arr));
 // console.log(sum);
