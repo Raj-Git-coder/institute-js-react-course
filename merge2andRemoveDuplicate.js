@@ -12,7 +12,7 @@ let mergeAndRemoveDupli = (arr, arr1) =>
             mergedArr.push(arr[i]);
         }
     }
-console.log(mergedArr);
+    console.log(mergedArr);
     
 }
 

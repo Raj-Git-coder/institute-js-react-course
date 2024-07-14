@@ -13,3 +13,5 @@ let arr1 = arr.map((val, index) =>
 });
 
 console.log(arr1);
+
+// diff betn map and filter is, map returns all values and filter returns specific values that satisfies the condition
