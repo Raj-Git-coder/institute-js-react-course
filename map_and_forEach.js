@@ -12,6 +12,13 @@ let arr1 = arr.map((val, index) =>
     return val, index;
 });
 
-console.log(arr1);
+// console.log(arr1);
 
-// diff betn map and filter is, map returns all values and filter returns specific values that satisfies the condition
+arr.forEach((element)=>
+{
+    console.log(element);
+});
+
+// **************************************************************************************************
+// Note : diff betn map and filter is, map returns all values and filter returns specific values that satisfies the condition.
+// **************************************************************************************************
