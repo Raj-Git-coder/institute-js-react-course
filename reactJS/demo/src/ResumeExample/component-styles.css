@@ -1,0 +1,22 @@
+
+ /* 
+ - This is the part of the Resume Example given for practise
+ - in this we are creating the div components(like Intro, Skills, Education etc) in different (.js)files and the styling for them in a .css file "ResumeStyle",  and then integrating them all together in App.js  
+ */
+
+ #introDiv
+ {
+     margin: 6px;
+     padding: 1%;
+ }
+ #skillAndEduDiv
+ {
+     display: flex;
+ }
+ .border
+ {
+     flex: 1;            /* this property helps us provide equal space to the components the components */
+     margin: 8px;
+     padding: 1%;
+ }
+ 
