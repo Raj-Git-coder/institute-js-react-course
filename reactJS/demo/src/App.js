@@ -1,20 +1,29 @@
 import React from 'react'
 
-import ComponentStyles from "./ResumeExample/component-styles.css"
+// import ComponentStyles from "./ResumeExample/component-styles.css"
 
-import IntroOfCandidate from './ResumeExample/candidate-intro'
-import SkillsAndEducationOfCandidate from './ResumeExample/candidate-skills-and-education'
-import ProjectsListOfCandidate from './ResumeExample/project-list-of-candidate'
+// import IntroOfCandidate from './ResumeExample/candidate-intro'
+// import SkillsAndEducationOfCandidate from './ResumeExample/candidate-skills-and-education'
+// import ProjectsListOfCandidate from './ResumeExample/project-list-of-candidate'
+
+// import StylingForBtn from './EventHandlingExample/StylingForBtn.css'
+// import ButtonForEventHandling from './EventHandlingExample/ButtonForEventHandling'
+
+import Form from './EventHandlingExample/FormEvent/Form'
 
 function App() {
     return (
         <body style={{ backgroundColor: "whitesmoke" }}>
 
-            <center><h1>Resume</h1></center>
+            {/* <center><h1>Resume</h1></center>
 
             <IntroOfCandidate />
             <SkillsAndEducationOfCandidate />
-            <ProjectsListOfCandidate />
+            <ProjectsListOfCandidate /> */}
+
+            {/* <ButtonForEventHandling /> */}
+
+            <Form />
             
         </body>
     );

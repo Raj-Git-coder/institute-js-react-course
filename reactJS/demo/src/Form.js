@@ -1,6 +1,7 @@
 import React from 'react'
 
-function FirstForm() {
+function FirstForm() 
+{
     return (
         <>
             <h1>Registration Form using Bootstrap</h1>
