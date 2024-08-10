@@ -1,14 +1,23 @@
 .btn.btn-success 
 {
     /* position: relative;
-    width: 4px;
-    height: 2px;
-    border: 3px solid #73AD21; */
+    width: 70px;
+    height: 30px;
+    border: 2px solid #73AD21; */
     /* position: absolute;
     top: 50%;
-    right: 80%; */
+    right:60%; */
     /* flex: 1; */
 } 
+
+
+.container 
+{
+    display: flex; /* Enables Flexbox layout for the container */
+    justify-content: center; /* Centers child elements horizontally within the container */
+    align-items: center; /* Centers child elements vertically within the container */
+    height: 100vh; /* Sets the height of the container to 100% of the viewport height */
+  }
 
 .divForEventHandling
 {

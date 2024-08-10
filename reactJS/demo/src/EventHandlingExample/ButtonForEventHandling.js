@@ -22,10 +22,12 @@ function ButtonForEventHandling()
 
     return(
         <>
-            <div class="divForEventHandling">
-                <button type="button" class="btn btn-success" onClick={handleMinus}> - </button>
-                <p> {num1} </p>
-                <button type="button" class="btn btn-success" onClick={handlePlus}> + </button>
+            <div class="container">
+                <div class="divForEventHandling">
+                    <button type="button" class="btn btn-success" onClick={handleMinus}> - </button>
+                    <p> {num1} </p>
+                    <button type="button" class="btn btn-success" onClick={handlePlus}> + </button>
+                </div>
             </div>
         </>
     );

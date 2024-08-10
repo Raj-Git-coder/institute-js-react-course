@@ -1,12 +1,12 @@
 import React from 'react'
 
-// import ComponentStyles from "./ResumeExample/component-styles.css"
+// import "./ResumeExample/component-styles.css"
 
 // import IntroOfCandidate from './ResumeExample/candidate-intro'
 // import SkillsAndEducationOfCandidate from './ResumeExample/candidate-skills-and-education'
 // import ProjectsListOfCandidate from './ResumeExample/project-list-of-candidate'
 
-// import StylingForBtn from './EventHandlingExample/StylingForBtn.css'
+// import './EventHandlingExample/StylingForBtn.css'
 // import ButtonForEventHandling from './EventHandlingExample/ButtonForEventHandling'
 
 import Form from './EventHandlingExample/FormEvent/Form'
@@ -31,14 +31,27 @@ function App() {
 
 export default App;
 
-// 1. For logical things use '{}'  eg. let x=10; inside our html body write {x}
-// 2. for style use '{{}}' eg. <body style={{backgroundColor: "whitesmoke"}}>
-// 3. ExternalCss use 'import' keyword
-// 4. Closing tags is compulsory i.e. <br/>
-// 5. Linking Bootstrap
-// 6. Calling Components
-// 7. Pascal case for componets
-// 8. React Fragment
-// 9. To add our external html file, first import it here, place the file name inside these braces  '<FileName />'
-// 10. Never rename a file name after creating it
-// 11. import ReactComponent_name from './CustomFolder/js-file-name'
+// Points to Remember:
+    // 1. For logical elements, use '{}'.  e.g. let x=10; inside our html body write {x}
+
+    // 2. For InlineCss, use '{{}}'. e.g. <body style={{backgroundColor: "whitesmoke"}}>
+
+    // 3. For external CSS, use the 'import' statement. Example:
+        // import './styles.css';
+        // Note: No need to use an alias for CSS imports as it is not used as a variable.
+
+    // 4. Closing tags are compulsory. Example:
+        // Use <br /> instead of <br>.
+
+    // 5. Link Bootstrap by adding the 4 links in the ./public/index.html's <head> section
+
+    // 6. To call Components, first import them using an alias, then use that alias in the return statement as a self-closing tag. eg
+        // import AliasForComponent from './TaskNameFolder/component-name';
+        // return( <AliasForFunctionName /> );
+
+    // 7. Use PascalCase for component names, e.g. ComponentName
+
+    // 8. Use React Fragment to wrap multiple elements in a single parent without adding extra nodes to the DOM. 
+    // i.e either use this <React.Fragment>...</React.Fragment> or this <>...</> for enclosing
+
+    // 9. Never rename a file name after creating it.
