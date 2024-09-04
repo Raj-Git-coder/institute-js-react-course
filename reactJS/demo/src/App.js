@@ -1,10 +1,13 @@
 import React from 'react'
 
-import "./ResumeExample_using_BootStrap/component-styles.css"
+import SheetDataTable from './SpreadsheetToWebTable/display-spreadsheetData'
+import "/Users/Raj/Documents/Raj Personal GitHub/institute-js-react-course/reactJS/demo/src/SpreadsheetToWebTable/table-style.css"
 
-import IntroOfCandidate from './ResumeExample_using_BootStrap/candidate-intro'
-import SkillsAndEducationOfCandidate from './ResumeExample_using_BootStrap/candidate-skills-and-education'
-import ProjectsListOfCandidate from './ResumeExample_using_BootStrap/project-list-of-candidate'
+// import "./ResumeExample_using_BootStrap/component-styles.css"
+
+// import IntroOfCandidate from './ResumeExample_using_BootStrap/candidate-intro'
+// import SkillsAndEducationOfCandidate from './ResumeExample_using_BootStrap/candidate-skills-and-education'
+// import ProjectsListOfCandidate from './ResumeExample_using_BootStrap/project-list-of-candidate'
 
 // import './EventHandlingExample/StylingForBtn.css'
 // import ButtonForEventHandling from './EventHandlingExample/ButtonForEventHandling'
@@ -13,20 +16,26 @@ import ProjectsListOfCandidate from './ResumeExample_using_BootStrap/project-lis
 
 function App() {
     return (
-        <body style={{ backgroundColor: "whitesmoke" }}>
 
-            <center><h1>Resume</h1></center>
+        <div>
+            <h1>My App</h1>
+            <SheetDataTable />
+        </div>
 
-            <IntroOfCandidate />
-            <SkillsAndEducationOfCandidate />
-            <ProjectsListOfCandidate />
+        // <body style={{ backgroundColor: "whitesmoke" }}>
+
+        //     <center><h1>Resume</h1></center>
+
+        //     <IntroOfCandidate />
+        //     <SkillsAndEducationOfCandidate />
+        //     <ProjectsListOfCandidate />
 
 
-            {/* <ButtonForEventHandling /> */}
+        //     {/* <ButtonForEventHandling /> */}
 
-            {/* <Form /> */}
+        //     {/* <Form /> */}
             
-        </body>
+        // </body>
     );
 }
 
