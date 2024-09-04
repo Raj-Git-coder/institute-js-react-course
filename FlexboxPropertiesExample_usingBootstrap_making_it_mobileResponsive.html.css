@@ -1,0 +1,16 @@
+.row
+{
+    border: 2px black solid;
+    justify-content: space-evenly;
+    gap: 10px;
+    padding: 20px;
+
+    /* display: flex; */
+    
+}
+.col-sm-12.col-md-4.col-lg-2.card
+{
+    height: 300px;
+    border: 2px rgb(0, 208, 255) solid;
+
+}

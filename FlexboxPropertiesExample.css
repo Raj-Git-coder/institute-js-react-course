@@ -1,0 +1,14 @@
+.container
+{
+    border: 5px black solid;
+    display: flex;
+    flex-direction: row;    /**/
+    justify-content: center;
+    height: 100px;
+    align-items: center;
+    
+}
+.card
+{
+    border: 2px rgb(255, 0, 0) solid;
+}

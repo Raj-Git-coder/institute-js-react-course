@@ -1,0 +1,15 @@
+.container
+{
+    border: 2px black solid;
+    display: flex;
+    height: 100px;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: space-arround;
+    /* align-items: space-arround; */
+}
+.card
+{
+    border: 2px green solid;
+
+}
