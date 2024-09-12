@@ -1,7 +1,7 @@
 import React from 'react'
 
 import SheetDataTable from './SpreadsheetToWebTable/display-spreadsheetData'
-import "/Users/Raj/Documents/Raj Personal GitHub/institute-js-react-course/reactJS/demo/src/SpreadsheetToWebTable/table-style.css"
+import "./SpreadsheetToWebTable/table-style.css"
 
 // import "./ResumeExample_using_BootStrap/component-styles.css"
 
@@ -18,7 +18,6 @@ function App() {
     return (
 
         <div>
-            <h1>My App</h1>
             <SheetDataTable />
         </div>
 
@@ -59,9 +58,11 @@ export default App;
         // import AliasForComponent from './TaskNameFolder/component-name';
         // return( <AliasForFunctionName /> );
 
-    // 7. Use PascalCase for component names, e.g. ComponentName
+    // 7. The opening curved bracket must always be on the same line as the return keyword, otherwise the react page on the browser will show a blank page.
 
-    // 8. Use React Fragment to wrap multiple elements in a single parent without adding extra nodes to the DOM. 
+    // 8. Use PascalCase for component names, e.g. ComponentName
+
+    // 9. Use React Fragment to wrap multiple elements in a single parent without adding extra nodes to the DOM. 
     // i.e either use this <React.Fragment>...</React.Fragment> or this <>...</> for enclosing
 
-    // 9. Never rename a file name after creating it.
+    // 10. Never rename a file name after creating it.
