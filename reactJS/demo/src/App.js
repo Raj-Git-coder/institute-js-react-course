@@ -1,44 +1,24 @@
-import React from 'react'
-
-import SheetDataTable from './SpreadsheetToWebTable/display-spreadsheetData'
-import "./SpreadsheetToWebTable/table-style.css"
-
-// import "./ResumeExample_using_BootStrap/component-styles.css"
-
-// import IntroOfCandidate from './ResumeExample_using_BootStrap/candidate-intro'
-// import SkillsAndEducationOfCandidate from './ResumeExample_using_BootStrap/candidate-skills-and-education'
-// import ProjectsListOfCandidate from './ResumeExample_using_BootStrap/project-list-of-candidate'
-
-// import './EventHandlingExample/StylingForBtn.css'
-// import ButtonForEventHandling from './EventHandlingExample/ButtonForEventHandling'
-
-// import Form from './EventHandlingExample/FormEvent/Form'
-
-function App() {
-    return (
-
-        <div>
-            <SheetDataTable />
-        </div>
-
-        // <body style={{ backgroundColor: "whitesmoke" }}>
-
-        //     <center><h1>Resume</h1></center>
-
-        //     <IntroOfCandidate />
-        //     <SkillsAndEducationOfCandidate />
-        //     <ProjectsListOfCandidate />
+import React from 'react';
 
 
-        //     {/* <ButtonForEventHandling /> */}
 
-        //     {/* <Form /> */}
-            
-        // </body>
+
+
+function App()
+{
+    
+    return(
+        <>
+        <label for="validationCustom03" class="form-label">Label</label>
+        <input type="text" class="form-control" id="validationCustom03" required/>
+        <button type="button" class="btn btn-success">Change Text</button>
+
+        </>
+
     );
 }
-
 export default App;
+
 
 // Points to Remember:
     // 1. For logical elements, use '{}'.  e.g. let x=10; inside our html body write {x}

@@ -5,9 +5,10 @@ function SheetDataTable()
 	const [data, setData] = useState([]);
 
 	// API Key, Spreadsheet ID, and Range
-	const API_KEY = 'AIzaSyB2sulyEZ9QcMCtDaCe478IjhLtJNL4QrA';
-	const SPREADSHEET_ID = '1sMEjj73Pis7HMSdetcGndx1fqqHwOIoy17C7hkKten4';
-	const RANGE = 'Sheet1!A1:E'; // Adjust as needed
+		const API_KEY = 'AIzaSyB2sulyEZ9QcMCtDaCe478IjhLtJNL4QrA';
+		const SPREADSHEET_ID = '1sMEjj73Pis7HMSdetcGndx1fqqHwOIoy17C7hkKten4';
+		const RANGE = 'Sheet1!A1:E'; // Adjust as needed
+	// 
 
 	// Function to create the table dynamically
 	const displayData = (data) => 
@@ -30,7 +31,28 @@ function SheetDataTable()
 			row.forEach((cellData) => 
 			{
 				const cell = rowElement.insertCell();
-				cell.textContent = cellData;
+				// cell.textContent = cellData;
+				// console.log(cellData);
+				if(cellData.includes("https"))
+				{
+					// console.log(cellData);
+					let newParagraph = document.createElement("p");
+					let newAnchor = document.createElement("a");
+					newAnchor.setAttribute("className", "link-offset-1");
+					newAnchor.setAttribute("href", cellData);
+					newAnchor.innerHTML=cellData;
+
+					newParagraph.appendChild(newAnchor);
+					cell.appendChild(newAnchor);
+					// console.log(newAnchor);
+					// // cell.textContent = cellData;
+					// cell.innerHTML = newParagraph.textContent;
+
+				}
+				else
+				{
+					cell.textContent = cellData;
+				}
 			});
 		});
 	};
@@ -47,7 +69,7 @@ function SheetDataTable()
 				setData(data.values);
 				displayData(data.values);
 			} 
-			catch (error) 
+			catch (error)
 			{
 				console.error('Error fetching data:', error);
 			}
@@ -59,7 +81,7 @@ function SheetDataTable()
 	return (
 		<div>
 		<center><h1>Strategic Call Dashboard</h1></center>
-		<table id="dataTable" class="table table-success table-striped"></table>
+		<table id="dataTable" className="table table-success table-striped"></table>
 		</div>
 	);
 }
