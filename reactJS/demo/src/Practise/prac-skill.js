@@ -1,8 +1,8 @@
 import React from "react";
 
-function Skills()
+function Skills(props)
 {
-    let arr1 = ["html", "css", "js", "java", "react"];
+    // let arr1 = ["html", "css", "js", "java", "react"];
     function handleclick()
     {
         console.log("clicked");
@@ -11,12 +11,12 @@ function Skills()
         <div id="div1">
             <h3>Skills:</h3>
             <ol>
-               {arr1.map((data, idx)=>
+               {props.skillnames.map((data, idx)=>
                {
                     return (<li>{data}</li>)
                })}
             </ol>
-<button onClick={handleclick}>click</button>
+            <button onClick={handleclick}>click</button>
         </div>
     );
 }
