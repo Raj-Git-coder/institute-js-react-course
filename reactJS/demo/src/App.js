@@ -1,11 +1,10 @@
 import React from "react";
-import Comp1 from "./Props/prac-comp-01";
-import './Props/prac-comp-styles.css'
+import Button_Event from "./EventHandlingExample/InputChangeOnButtonClick/input-change-dispay-in-console-on-buttonClick-without-hook";
 
 function App()
 {
     return(
-        <Comp1 />
+        <Button_Event />
     );
 }
 export default App;
