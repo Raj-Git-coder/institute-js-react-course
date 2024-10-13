@@ -1,0 +1,14 @@
+/* #tableHead
+{
+    background-color: aquamarine;
+} */
+
+/* #tableHead
+{
+    background-color: aquamarine !important;
+
+} */
+
+.custom-table{
+    background-color: aquamarine !important;   
+}
