@@ -1,12 +1,13 @@
 import React from "react";
 
-import ReadGoogleSpreadSheet from "./Practise/ReadTable/read-spreadsheet-data-and-display";
+import Form from "./Practise/input-field-and-select-prac";
+
 
 function App()
 {
     return(
         <>
-            <ReadGoogleSpreadSheet />
+            <Form />
         </>
         
     );
